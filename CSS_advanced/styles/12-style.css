@@ -19,6 +19,7 @@
     --line-height-big: 1.8;
     --section-header-align: center;
     --section-tagline-transform: uppercase;
+    --section-title-margin: 0;
 }
 
 html {
@@ -37,11 +38,14 @@ html {
 
 a {
     text-decoration: none;
+    background-color: var(--text-color);
+
+
 }
 
 body,
 a {
-    color: var(--text-color);
+    background-color: var(--text-color);
     font-family: var(--font-family-base);
     font-size: var(--font-size-medium);
     font-weight: var(--font-weight-regular);
@@ -63,7 +67,16 @@ h6 {
 }
 
 .section-tagline {
+    background-color: var(--color-primary);
     font-family: var(--font-family-title);
     text-transform: var(--section-tagline-transform);
     font-weight: var(--font-weight-bold);
+}
+
+.section-title {
+    font-family: var(--font-family-title);
+    font-size: var(--font-size-xx-large);
+    font-weight: var(--font-weight-bold);
+    margin: var(--section-title-margin);
+    color: var(--section-title-color);
 }
